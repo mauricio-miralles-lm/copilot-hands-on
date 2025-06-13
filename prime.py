@@ -13,3 +13,14 @@ def is_prime(n):
         if n % i == 0 or n % (i + 2) == 0:
             return False
     return True
+
+# create a function to do 5 unit tests of the code above
+def test_is_prime():
+    """Run unit tests for the is_prime function."""
+    assert is_prime(2) == True, "Test case 1 failed"
+    assert is_prime(3) == True, "Test case 2 failed"
+    assert is_prime(4) == False, "Test case 3 failed"
+    assert is_prime(29) == True, "Test case 4 failed"
+    assert is_prime(100) == False, "Test case 5 failed"
+    
+    print("All test cases passed!")
